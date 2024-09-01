@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Challenges</title>
+    <link rel="stylesheet" href="challange.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fusion Challenges</h1>
+        <div id="create-challenge">
+            <h2>Create a Challenge</h2>
+            <input type="text" id="criteria" placeholder="Challenge Criteria" />
+            <input type="number" id="reward" placeholder="Reward (ETH)" />
+            <button id="create-btn">Create Challenge</button>
+        </div>
+        <div id="challenges-list">
+            <h2>Active Challenges</h2>
+            <ul id="challenges"></ul>
+        </div>
+    </div>
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion To Future</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <h1>Welcome</h1>
+    <button id="fusionchallangeBtn">Challange Fusion</button>
+    <button id="nftFusionBtn">NFT Fusion</button>
+    <button id="coinFusionBtn">Coin Fusion</button>
+    <button id="randomFusionBtn">Random Fusion</button>
+<p id="fusionResult"></p>
+
+    
+    <script>
+        // NFT Fusion butonuna tıklandığında NFT Fusion sayfasına yönlendir
+        document.getElementById('nftFusionBtn').addEventListener('click', function() {
+            window.location.href = 'NftFusion.html'; // NFT Fusion sayfasına yönlendir
+        });
+
+        // Coin Fusion butonuna tıklandığında Coin Fusion sayfasına yönlendir
+        document.getElementById('coinFusionBtn').addEventListener('click', function() {
+            window.location.href = 'coinfusion.html'; // Coin Fusion sayfasına yönlendir
+        });
+
+            // Random Fusion butonuna tıklandığında Coin Fusion sayfasına yönlendir
+        document.getElementById('randomFusionBtn').addEventListener('click', function() {
+            window.location.href = 'randomFusion.html'; // Random Fusion sayfasına yönlendir
+
+        });
+          // Challange Fusion butonuna tıklandığında Coin Fusion sayfasına yönlendir
+          document.getElementById('fusionchallangeBtn').addEventListener('click', function() {
+            window.location.href = 'challange.html'; // Challange Fusion sayfasına yönlendir
+
+        });
+
+    </script>
+        <script src="app.js"></script> <!-- app.js dosyasını dahil ediyoruz -->
+
+    
+    <div class="wrap">
+        <header>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="CF.svg" alt="Coinfusion-logo">
+                </a>
+                <div class="divider hide-mobile"></div>
+                
+            </div>
+
+            
+        </header>
+
+        <main>
+            <h1>Fusion is where innovation begins. Combine your crypto assets to create your own path <img src="bitcoin.png" alt="Text that says crypto"></h1>
+            <p class="subhead">
+                .."In the ever-evolving world of cryptocurrency, innovation comes from the fusion of ideas, assets, and vision. Just as elements combine to form something greater, your crypto assets can merge to create new possibilities. Each fusion is a step towards something unique, a token that carries the potential of your imagination."
+
+
+            </p>
+            <a href="#" class="primary-cta">Get Coinfusion</a>
+        </main>
+
+        <div class="bitcoin-container">
+            <div class="bitcoin">
+                <img src="1.png" alt="bitcoin illustration">
+                <div class="inner-circle"></div>
+                <div class="outer-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const menu = document.querySelector('nav ul');
+        const menuBtn = document.querySelector('.menu-open');
+        const closeBtn = document.querySelector('.menu-close');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.add('open')
+        })
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open')
+        })
+
+    </script>
+    
+</body>
+</html>
+

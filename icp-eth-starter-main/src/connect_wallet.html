@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Wallet</title>
+    <link rel="stylesheet" href="connect_wallet.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.0/dist/ethers.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body data-page="connect_wallet">
+    <header>
+        <h1>Connect Wallet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="NftFusion.html">NFT Fusion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="wallet-container">
+            <h2>Connect Your Wallet</h2>
+            <!-- Connect Wallet Butonu -->
+    <button id="connectWalletBtn">Connect Wallet</button>
+    <script>
+        document.getElementById('connectWalletBtn').addEventListener('click', event => {
+            let account;
+            let button = event.target;
+
+            ethereum.request({method: 'eth_requestAccounts'}).then(accounts =>{
+            account = account[0];
+            console.log(account);
+            button.textContent = account;
+
+            ethereum.request({method: 'eth_getBalance' , params: [account, 'latest']}).then(result => {
+            console.log(result);
+            let wei = parseInt(result,16);
+            let balance = wei / (10**18);
+            console.log(balance+ " ETH");
+            });
+        });
+    })
+
+    </script>
+    
+    <!-- Uygulamanın app.js dosyası -->
+    <script src="app.js"></script>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 NFT Fusion App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

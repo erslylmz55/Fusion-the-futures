@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Fusion</title>
+    <link rel="stylesheet" href="nft_fusion.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.0/dist/ethers.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body data-page="NftFusion">
+    <h1>NFT Fusion</h1>
+    <button id="coinFusionBtn">Coin Fusion Sayfasına Git</button>
+    <button id="homeBtn">Anasayfaya Git</button>
+    <script src="app.js"></script> <!-- app.js dosyasını dahil ediyoruz -->
+
+    
+    <script>
+        // Coin Fusion butonuna tıklandığında Coin Fusion sayfasına yönlendir
+        document.getElementById('coinFusionBtn').addEventListener('click', function() {
+            window.location.href = 'coinfusion.html'; // Coin Fusion sayfasına yönlendir
+        });
+
+        // Anasayfa butonuna tıklandığında anasayfaya yönlendir
+        document.getElementById('homeBtn').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Anasayfaya yönlendir
+        });
+    </script>
+    <div id="nft-container">
+        <!-- NFT'lerinizi ve nadirlik hesaplama sonuçlarını göstermek için kullanılacak alan -->
+    </div>
+
+    <script src="NftFusion.css"></script> <!-- JS dosyanız -->
+    <header>
+        <h1>NFT Fusion App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="connect_wallet.html">Connect Wallet</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="fusion-container">
+            <h2>NFT Fusion</h2>
+            <p>Enter the IDs of the NFTs you want to fuse, separated by commas.</p>
+            <label for="nftTokenIds">Enter Token IDs (comma-separated):</label>
+            <input type="text" id="nftTokenIds" placeholder="e.g. 1,2,3">
+            <button id="fuseButton">Fuse NFTs</button>
+            <div id="fusionResult"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 NFT Fusion App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

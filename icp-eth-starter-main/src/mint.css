@@ -1,0 +1,71 @@
+/* Genel sayfa stili */
+body {
+    background-color: #000; /* Arka plan rengi siyah */
+    color: #fff; /* Yazı rengi beyaz */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ekranın tam yüksekliği */
+}
+
+/* İçerik konteyneri */
+.container {
+    text-align: center;
+    background-color: #222; /* İçerik alanı için koyu gri arka plan */
+    padding: 20px;
+    border-radius: 10px; /* Köşeler yuvarlatılmış */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Gölge efekti */
+}
+
+/* Başlık stili */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form grubu */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #fff; /* Beyaz kenarlık */
+    border-radius: 5px; /* Köşeler yuvarlatılmış */
+    background-color: #333; /* Koyu gri arka plan */
+    color: #fff; /* Beyaz yazı rengi */
+}
+
+/* Buton stili */
+#mintButton {
+    background-color: #4CAF50; /* Buton arka plan rengi */
+    color: #fff; /* Buton yazı rengi */
+    padding: 12px 24px; /* Buton iç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 8px; /* Köşeler yuvarlatılmış */
+    cursor: pointer; /* Fare işareti değişimi */
+    font-size: 16px; /* Yazı boyutu */
+    transition: background-color 0.3s ease; /* Arka plan renginin yumuşak geçişi */
+}
+
+/* Buton hover efekti */
+#mintButton:hover {
+    background-color: #45a049; /* Hover sırasında daha koyu yeşil */
+}
+
+/* Buton aktif efekti */
+#mintButton:active {
+    background-color: #3e8e41; /* Tıklanma sırasında daha koyu yeşil */
+    transform: scale(0.98); /* Tıklanma sırasında butonun biraz küçülmesi */
+}
